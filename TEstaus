@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graffiti Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ff5733;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            background: #333;
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .cta {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .contact-form button {
+            background: #ff5733;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #ff7733;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Graffiti Shop
+</header>
+
+<nav>
+    <a href="#etusivu">Etusivu</a>
+    <a href="#tuotteet">Tuotteet</a>
+    <a href="#yhteystiedot">Yhteystiedot</a>
+</nav>
+
+<div id="etusivu" class="content">
+    <h1>Tervetuloa Graffiti Shopiin!</h1>
+    <p>Osta uniikkeja tuotteita, jotka tekevät vaikutuksen. Tyylisi ansaitsee näkyä!</p>
+    <div class="cta">
+        <button>Tutustu tuotteisiin</button>
+    </div>
+</div>
+
+<div id="tuotteet" class="content">
+    <h2>Tuotteet</h2>
+    <p>Tuotelista lisätään tänne.</p>
+</div>
+
+<div id="yhteystiedot" class="content">
+    <h2>Ota yhteyttä</h2>
+    <form class="contact-form">
+        <input type="text" name="nimi" placeholder="Nimesi" required>
+        <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
+        <textarea name="viesti" placeholder="Viestisi" rows="5" required></textarea>
+        <button type="submit">Lähetä</button>
+    </form>
+</div>
+
+<footer>
+    &copy; 2025 Graffiti Shop. Kaikki oikeudet pidätetään.
+</footer>
+
+</body>
+</html>
